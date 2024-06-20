@@ -1,0 +1,29 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.jumbotron {
+    background: #343a40 url('header-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+footer {
+    background-color: #343a40;
+}
+
+.contact-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
