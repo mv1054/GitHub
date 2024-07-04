@@ -1,0 +1,1 @@
+This repository will contain the assignments for the JavaScript module
