@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/Portfolio.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#slideshow">Slideshow</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#github">Github</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1 class="zoom">Mark Vinogradov's Personal Profile</h1>
+    </section>
+
+    <!-- Slideshow Section -->
+    <section id="slideshow">
+        <!-- Slideshow content can be added here -->
+        <h2>Slideshow</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="../pics/family.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="../pics/friends.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="../pics/stampede.jpg" style="width:100%">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am all about web development! Go ahead and send me your contact info below for a website quote!</p>
+    </section>
+
+    <!-- Github Section -->
+    <section id="github">
+        <h2>Github</h2>
+        <a href="https://www.learncodinganywhere.com/">The Tech Academy</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/Portfolio.js"></script>
+</body>
+</html>
