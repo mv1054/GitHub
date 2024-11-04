@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorite Song</title>
+  
+  <!-- CSS for styling -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff; /* light blue background */
+      text-align: center;
+    }
+    h1 {
+      color: #004080;
+    }
+    /* Animation styles for the music note */
+    .music-note {
+      font-size: 40px;
+      color: #004080;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: float 3s infinite;
+    }
+    /* Keyframes for floating effect */
+    @keyframes float {
+      0% { transform: translate(-50%, -50%) translateY(0); }
+      50% { transform: translate(-50%, -50%) translateY(-30px); }
+      100% { transform: translate(-50%, -50%) translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Enjoy My Favorite Song!</h1>
+  
+  <!-- Embedded YouTube video -->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/sU6wC6FC72U" 
+          title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+  
+  <!-- Music note for animation -->
+  <div class="music-note">🎵</div>
+
+  <!-- JavaScript for dynamic content -->
+  <script>
+    const note = document.querySelector('.music-note');
+    // Change color on click
+    note.addEventListener('click', () => {
+      note.style.color = note.style.color === 'red' ? '#004080' : 'red';
+    });
+  </script>
+  
+</body>
+</html>
